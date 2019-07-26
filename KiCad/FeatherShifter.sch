@@ -1,0 +1,580 @@
+EESchema Schematic File Version 5
+LIBS:FeatherShifter-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5D18F8ED
+P 950 7250
+F 0 "H4" H 1050 7296 50  0000 L CNN
+F 1 "MountingHole" H 1050 7205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 950 7250 50  0001 C CNN
+F 3 "~" H 950 7250 50  0001 C CNN
+	1    950  7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5D18FC88
+P 950 7050
+F 0 "H3" H 1050 7096 50  0000 L CNN
+F 1 "MountingHole" H 1050 7005 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 950 7050 50  0001 C CNN
+F 3 "~" H 950 7050 50  0001 C CNN
+	1    950  7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5D190365
+P 950 6850
+F 0 "H2" H 1050 6896 50  0000 L CNN
+F 1 "MountingHole" H 1050 6805 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 950 6850 50  0001 C CNN
+F 3 "~" H 950 6850 50  0001 C CNN
+	1    950  6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5D1905E0
+P 950 6650
+F 0 "H1" H 1050 6696 50  0000 L CNN
+F 1 "MountingHole" H 1050 6605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 950 6650 50  0001 C CNN
+F 3 "~" H 950 6650 50  0001 C CNN
+	1    950  6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x12 J1
+U 1 1 5D191B96
+P 4450 3250
+F 0 "J1" V 4550 3250 50  0000 C CNN
+F 1 "Conn_01x12" V 4550 3550 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical" H 4450 3250 50  0001 C CNN
+F 3 "~" H 4450 3250 50  0001 C CNN
+	1    4450 3250
+	1    0    0    1   
+$EndComp
+Text Label 4050 2650 2    50   ~ 0
+bat
+Text Label 4050 2750 2    50   ~ 0
+en
+Text Label 4050 2850 2    50   ~ 0
+usb
+Text Label 4050 3650 2    50   ~ 0
+scl
+Text Label 4050 3750 2    50   ~ 0
+sda
+Wire Wire Line
+	4050 3750 4250 3750
+Wire Wire Line
+	4250 3650 4050 3650
+Wire Wire Line
+	4250 2850 4050 2850
+Wire Wire Line
+	4250 2750 4050 2750
+Wire Wire Line
+	4250 2650 4050 2650
+$Comp
+L power:GND #PWR0101
+U 1 1 5D19B04E
+P 3400 2550
+F 0 "#PWR0101" H 3400 2300 50  0001 C CNN
+F 1 "GND" V 3405 2422 50  0000 R CNN
+F 2 "" H 3400 2550 50  0001 C CNN
+F 3 "" H 3400 2550 50  0001 C CNN
+	1    3400 2550
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:+3V3 #PWR0102
+U 1 1 5D19A1EE
+P 3400 2350
+F 0 "#PWR0102" H 3400 2200 50  0001 C CNN
+F 1 "+3V3" V 3415 2478 50  0000 L CNN
+F 2 "" H 3400 2350 50  0001 C CNN
+F 3 "" H 3400 2350 50  0001 C CNN
+	1    3400 2350
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	3700 3650 3400 3650
+Wire Wire Line
+	3400 3550 3700 3550
+Wire Wire Line
+	3700 3450 3400 3450
+Wire Wire Line
+	3400 3350 3700 3350
+Wire Wire Line
+	3700 3250 3400 3250
+Text Label 3700 3250 2    50   ~ 0
+sck
+Text Label 3700 3350 2    50   ~ 0
+mo
+Text Label 3700 3450 2    50   ~ 0
+mi
+Text Label 3700 3550 2    50   ~ 0
+rx
+Text Label 3700 3650 2    50   ~ 0
+tx
+Wire Wire Line
+	3400 2250 3700 2250
+Text Label 3700 2250 2    50   ~ 0
+rst
+$Comp
+L Connector_Generic:Conn_01x16 J2
+U 1 1 5D18C1C3
+P 3200 2950
+F 0 "J2" V 3300 2900 50  0000 L CNN
+F 1 "Conn_01x16" V 3300 2100 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 3200 2950 50  0001 C CNN
+F 3 "~" H 3200 2950 50  0001 C CNN
+	1    3200 2950
+	-1   0    0    -1  
+$EndComp
+NoConn ~ 3400 2450
+NoConn ~ 3400 2650
+NoConn ~ 3400 2750
+NoConn ~ 3400 3750
+NoConn ~ 4250 3550
+NoConn ~ 4250 3450
+NoConn ~ 4250 3350
+NoConn ~ 4250 3250
+NoConn ~ 4250 2950
+$Comp
+L power:+3V3 #PWR0103
+U 1 1 5D1A8017
+P 2500 6750
+F 0 "#PWR0103" H 2500 6600 50  0001 C CNN
+F 1 "+3V3" V 2515 6878 50  0000 L CNN
+F 2 "" H 2500 6750 50  0001 C CNN
+F 3 "" H 2500 6750 50  0001 C CNN
+	1    2500 6750
+	0    1    -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5D1A83E0
+P 2500 6950
+F 0 "#PWR0104" H 2500 6700 50  0001 C CNN
+F 1 "GND" V 2505 6822 50  0000 R CNN
+F 2 "" H 2500 6950 50  0001 C CNN
+F 3 "" H 2500 6950 50  0001 C CNN
+	1    2500 6950
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5D1A8AF0
+P 2500 6750
+F 0 "#FLG0101" H 2500 6825 50  0001 C CNN
+F 1 "PWR_FLAG" V 2500 6877 50  0000 L CNN
+F 2 "" H 2500 6750 50  0001 C CNN
+F 3 "~" H 2500 6750 50  0001 C CNN
+	1    2500 6750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5D1A96C0
+P 2500 6950
+F 0 "#FLG0102" H 2500 7025 50  0001 C CNN
+F 1 "PWR_FLAG" V 2500 7077 50  0000 L CNN
+F 2 "" H 2500 6950 50  0001 C CNN
+F 3 "~" H 2500 6950 50  0001 C CNN
+	1    2500 6950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x03 Neopixel1
+U 1 1 5D18D2F1
+P 5150 5650
+F 0 "Neopixel1" V 5114 5462 50  0000 R CNN
+F 1 "Screw_Terminal_01x03" V 5023 5462 50  0000 R CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-3-3.5-H_1x03_P3.50mm_Horizontal" H 5150 5650 50  0001 C CNN
+F 3 "~" H 5150 5650 50  0001 C CNN
+	1    5150 5650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_POT RV2
+U 1 1 5D191E37
+P 1800 5950
+F 0 "RV2" H 1731 5996 50  0000 R CNN
+F 1 "R_POT" H 1731 5905 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_ACP_CA6-H2,5_Horizontal" H 1800 5950 50  0001 C CNN
+F 3 "~" H 1800 5950 50  0001 C CNN
+F 4 "Bourns" H 1800 5950 50  0001 C CNN "MFGR"
+F 5 "3306W-1-103" H 1800 5950 50  0001 C CNN "MPN"
+	1    1800 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV1
+U 1 1 5D192724
+P 1800 4900
+F 0 "RV1" H 1731 4946 50  0000 R CNN
+F 1 "R_POT" H 1731 4855 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_ACP_CA6-H2,5_Horizontal" H 1800 4900 50  0001 C CNN
+F 3 "~" H 1800 4900 50  0001 C CNN
+F 4 "Bourns" H 1800 4900 50  0001 C CNN "MFGR"
+F 5 "3306W-1-103" H 1800 4900 50  0001 C CNN "MPN"
+	1    1800 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5D192D10
+P 1800 5800
+F 0 "#PWR0105" H 1800 5550 50  0001 C CNN
+F 1 "GND" V 1805 5672 50  0000 R CNN
+F 2 "" H 1800 5800 50  0001 C CNN
+F 3 "" H 1800 5800 50  0001 C CNN
+	1    1800 5800
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5D1937FF
+P 1800 4750
+F 0 "#PWR0106" H 1800 4500 50  0001 C CNN
+F 1 "GND" V 1805 4622 50  0000 R CNN
+F 2 "" H 1800 4750 50  0001 C CNN
+F 3 "" H 1800 4750 50  0001 C CNN
+	1    1800 4750
+	1    0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR0107
+U 1 1 5D193C3A
+P 1800 6100
+F 0 "#PWR0107" H 1800 5950 50  0001 C CNN
+F 1 "+3V3" V 1815 6228 50  0000 L CNN
+F 2 "" H 1800 6100 50  0001 C CNN
+F 3 "" H 1800 6100 50  0001 C CNN
+	1    1800 6100
+	1    0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR0108
+U 1 1 5D1946B7
+P 1800 5050
+F 0 "#PWR0108" H 1800 4900 50  0001 C CNN
+F 1 "+3V3" V 1815 5178 50  0000 L CNN
+F 2 "" H 1800 5050 50  0001 C CNN
+F 3 "" H 1800 5050 50  0001 C CNN
+	1    1800 5050
+	1    0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0109
+U 1 1 5D1951CD
+P 5350 5550
+F 0 "#PWR0109" H 5350 5400 50  0001 C CNN
+F 1 "+5V" H 5365 5723 50  0000 C CNN
+F 2 "" H 5350 5550 50  0001 C CNN
+F 3 "" H 5350 5550 50  0001 C CNN
+	1    5350 5550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4600 6850 4400 6850
+$Comp
+L Jumper:SolderJumper_2_Open POW1
+U 1 1 5D1982C4
+P 4750 6850
+F 0 "POW1" H 5050 6800 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 5050 6700 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4750 6850 50  0001 C CNN
+F 3 "~" H 4750 6850 50  0001 C CNN
+	1    4750 6850
+	1    0    0    -1  
+$EndComp
+Text Label 5200 6850 0    50   ~ 0
+usb
+Wire Wire Line
+	5350 5650 5650 5650
+$Comp
+L power:GND #PWR0110
+U 1 1 5D19AFF6
+P 5350 5750
+F 0 "#PWR0110" H 5350 5500 50  0001 C CNN
+F 1 "GND" V 5355 5622 50  0000 R CNN
+F 2 "" H 5350 5750 50  0001 C CNN
+F 3 "" H 5350 5750 50  0001 C CNN
+	1    5350 5750
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5D19BA0B
+P 4400 6750
+F 0 "#FLG0103" H 4400 6825 50  0001 C CNN
+F 1 "PWR_FLAG" V 4400 6877 50  0000 L CNN
+F 2 "" H 4400 6750 50  0001 C CNN
+F 3 "~" H 4400 6750 50  0001 C CNN
+	1    4400 6750
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 Power1
+U 1 1 5D19FC3A
+P 4300 6500
+F 0 "Power1" V 4264 6312 50  0000 R CNN
+F 1 "Screw_Terminal_01x02" V 4173 6312 50  0000 R CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 4300 6500 50  0001 C CNN
+F 3 "~" H 4300 6500 50  0001 C CNN
+	1    4300 6500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0111
+U 1 1 5D1A20DF
+P 4400 6850
+F 0 "#PWR0111" H 4400 6700 50  0001 C CNN
+F 1 "+5V" H 4415 7023 50  0000 C CNN
+F 2 "" H 4400 6850 50  0001 C CNN
+F 3 "" H 4400 6850 50  0001 C CNN
+	1    4400 6850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4400 6850 4400 6750
+Connection ~ 4400 6850
+Connection ~ 4400 6750
+Wire Wire Line
+	4400 6750 4400 6700
+$Comp
+L Connector:Screw_Terminal_01x03 Neopixel2
+U 1 1 5D1A5328
+P 5100 3650
+F 0 "Neopixel2" V 5064 3462 50  0000 R CNN
+F 1 "Screw_Terminal_01x03" V 4973 3462 50  0000 R CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-3-3.5-H_1x03_P3.50mm_Horizontal" H 5100 3650 50  0001 C CNN
+F 3 "~" H 5100 3650 50  0001 C CNN
+	1    5100 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0112
+U 1 1 5D1A5333
+P 5300 3550
+F 0 "#PWR0112" H 5300 3400 50  0001 C CNN
+F 1 "+5V" H 5315 3723 50  0000 C CNN
+F 2 "" H 5300 3550 50  0001 C CNN
+F 3 "" H 5300 3550 50  0001 C CNN
+	1    5300 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5300 3650 5600 3650
+$Comp
+L power:GND #PWR0113
+U 1 1 5D1A533F
+P 5300 3750
+F 0 "#PWR0113" H 5300 3500 50  0001 C CNN
+F 1 "GND" V 5305 3622 50  0000 R CNN
+F 2 "" H 5300 3750 50  0001 C CNN
+F 3 "" H 5300 3750 50  0001 C CNN
+	1    5300 3750
+	0    -1   1    0   
+$EndComp
+NoConn ~ 3400 3050
+NoConn ~ 3400 3150
+Text Label 3700 2850 2    50   ~ 0
+a2
+Text Label 3700 2950 2    50   ~ 0
+a3
+Wire Wire Line
+	3700 2850 3400 2850
+Wire Wire Line
+	3400 2950 3700 2950
+$Comp
+L Device:Jumper JP3
+U 1 1 5D1AC558
+P 2250 5950
+F 0 "JP3" H 2250 6214 50  0000 C CNN
+F 1 "Jumper" H 2250 6123 50  0000 C CNN
+F 2 "FeatherShifter:Jumper2PinTHT" H 2250 5950 50  0001 C CNN
+F 3 "~" H 2250 5950 50  0001 C CNN
+	1    2250 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper JP2
+U 1 1 5D1AD1BD
+P 2250 4900
+F 0 "JP2" H 2250 5164 50  0000 C CNN
+F 1 "Jumper" H 2250 5073 50  0000 C CNN
+F 2 "FeatherShifter:Jumper2PinTHT" H 2250 4900 50  0001 C CNN
+F 3 "~" H 2250 4900 50  0001 C CNN
+	1    2250 4900
+	1    0    0    -1  
+$EndComp
+Text Label 2550 4900 0    50   ~ 0
+a2
+Text Label 2550 5950 0    50   ~ 0
+a3
+$Comp
+L Device:Jumper JP5
+U 1 1 5D1B76AC
+P 7150 5650
+F 0 "JP5" H 7150 5914 50  0000 C CNN
+F 1 "Jumper" H 7150 5823 50  0000 C CNN
+F 2 "FeatherShifter:Jumper2PinTHT" H 7150 5650 50  0001 C CNN
+F 3 "~" H 7150 5650 50  0001 C CNN
+	1    7150 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper JP4
+U 1 1 5D1B7DC9
+P 7100 3650
+F 0 "JP4" H 7100 3914 50  0000 C CNN
+F 1 "Jumper" H 7100 3823 50  0000 C CNN
+F 2 "FeatherShifter:Jumper2PinTHT" H 7100 3650 50  0001 C CNN
+F 3 "~" H 7100 3650 50  0001 C CNN
+	1    7100 3650
+	1    0    0    -1  
+$EndComp
+Text Label 4050 3150 2    50   ~ 0
+d11
+Text Label 4050 3050 2    50   ~ 0
+d12
+Wire Wire Line
+	4250 3050 4050 3050
+Wire Wire Line
+	4250 3150 4050 3150
+Text Label 7400 3650 0    50   ~ 0
+d12
+Text Label 7450 5650 0    50   ~ 0
+d11
+$Comp
+L power:+5V #PWR0114
+U 1 1 5D1C4E60
+P 6500 4250
+F 0 "#PWR0114" H 6500 4100 50  0001 C CNN
+F 1 "+5V" H 6515 4423 50  0000 C CNN
+F 2 "" H 6500 4250 50  0001 C CNN
+F 3 "" H 6500 4250 50  0001 C CNN
+	1    6500 4250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0115
+U 1 1 5D1C5CE7
+P 6500 3050
+F 0 "#PWR0115" H 6500 2800 50  0001 C CNN
+F 1 "GND" V 6505 2922 50  0000 R CNN
+F 2 "" H 6500 3050 50  0001 C CNN
+F 3 "" H 6500 3050 50  0001 C CNN
+	1    6500 3050
+	1    0    0    1   
+$EndComp
+$Comp
+L FeatherShifter:74AHCT1G125 L2
+U 1 1 5D1C4336
+P 6250 3650
+F 0 "L2" H 6500 3350 50  0000 L CNN
+F 1 "74AHCT1G125" H 6350 3200 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 6250 4100 50  0001 C CNN
+F 3 "" H 6250 4100 50  0001 C CNN
+F 4 "TI" H 6250 3650 50  0001 C CNN "MFGR"
+F 5 "SN74AHCT1G125DBVR" H 6250 3650 50  0001 C CNN "MPN"
+	1    6250 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0116
+U 1 1 5D1C9BD6
+P 6550 6250
+F 0 "#PWR0116" H 6550 6100 50  0001 C CNN
+F 1 "+5V" H 6565 6423 50  0000 C CNN
+F 2 "" H 6550 6250 50  0001 C CNN
+F 3 "" H 6550 6250 50  0001 C CNN
+	1    6550 6250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 5D1C9BE1
+P 6550 5050
+F 0 "#PWR0117" H 6550 4800 50  0001 C CNN
+F 1 "GND" V 6555 4922 50  0000 R CNN
+F 2 "" H 6550 5050 50  0001 C CNN
+F 3 "" H 6550 5050 50  0001 C CNN
+	1    6550 5050
+	1    0    0    1   
+$EndComp
+$Comp
+L FeatherShifter:74AHCT1G125 L1
+U 1 1 5D1C9BF0
+P 6300 5650
+F 0 "L1" H 6500 5300 50  0000 L CNN
+F 1 "74AHCT1G125" H 6400 5200 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 6300 6100 50  0001 C CNN
+F 3 "" H 6300 6100 50  0001 C CNN
+F 4 "TI" H 6300 5650 50  0001 C CNN "MFGR"
+F 5 "SN74AHCT1G125DBVR" H 6300 5650 50  0001 C CNN "MPN"
+	1    6300 5650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 5D1CCF84
+P 6250 4100
+F 0 "#PWR0118" H 6250 3850 50  0001 C CNN
+F 1 "GND" V 6255 3972 50  0000 R CNN
+F 2 "" H 6250 4100 50  0001 C CNN
+F 3 "" H 6250 4100 50  0001 C CNN
+	1    6250 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0119
+U 1 1 5D1CD761
+P 6300 6100
+F 0 "#PWR0119" H 6300 5850 50  0001 C CNN
+F 1 "GND" V 6305 5972 50  0000 R CNN
+F 2 "" H 6300 6100 50  0001 C CNN
+F 3 "" H 6300 6100 50  0001 C CNN
+	1    6300 6100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0120
+U 1 1 5D1949E3
+P 4300 6700
+F 0 "#PWR0120" H 4300 6450 50  0001 C CNN
+F 1 "GND" V 4305 6572 50  0000 R CNN
+F 2 "" H 4300 6700 50  0001 C CNN
+F 3 "" H 4300 6700 50  0001 C CNN
+	1    4300 6700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:D D1
+U 1 1 5D19FA30
+P 5050 6850
+F 0 "D1" H 5050 6634 50  0000 C CNN
+F 1 "D" H 5050 6725 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123F" H 5050 6850 50  0001 C CNN
+F 3 "~" H 5050 6850 50  0001 C CNN
+	1    5050 6850
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC
